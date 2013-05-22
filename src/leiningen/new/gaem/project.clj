@@ -51,7 +51,7 @@
   :compile-path "{{war}}/WEB-INF/classes"
   :target-path "{{war}}/WEB-INF/lib"
   :uberjar-exclusions [#"META-INF/DUMMY.SF"
-                       #"appengine-tools-api-1.7.4.jar"
+                       #"appengine-tools-api-1.8.0.jar"
                        #"appengine-local.*"
                        #"appengine-api.*"]
   :keep-non-project-classes false
@@ -62,6 +62,6 @@
                  [ring/ring-core "1.2.0-beta1"]
                  [ring/ring-devel "1.2.0-beta1"]
                  [hiccup "1.0.2"]
-                 [org.clojure/tools.logging "0.2.3"]]
+                 [org.clojure/tools.logging "0.2.6"]]
   :profiles {:dev {:dependencies [[appengine-magic "0.5.1-SNAPSHOT"]]}}
-  :plugins [[gaem "0.2.0-SNAPSHOT"]])
+  :plugins [[gaem "0.2.1-SNAPSHOT"]])
